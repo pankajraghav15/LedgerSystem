@@ -1,0 +1,11 @@
+<%- include("partials/header") %>
+
+<h2>Logout</h2>
+
+<p>Are you sure you want to logout, <%= user ? user.name : "User" %>?</p>
+
+<form action="/logout" method="GET">
+    <button type="submit">Logout</button>
+</form>
+
+<%- include("partials/footer") %>
